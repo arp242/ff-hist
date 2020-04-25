@@ -2,9 +2,9 @@ Usage:
 
     $ ff-hist term
 
-This will search for the term in the URL and title as 'like %..%'.
+This will search for the term in the URL and title as `like %term%`.
 
-To limit to just the URL or title, prefix with url: or title:
+To limit to just the URL or title, prefix with `url:` or `title:`
 
     $ ff-hist title:term
 
@@ -16,11 +16,11 @@ To OR together, add "or:"
 
       $ ff-hist title:term url:or:reddit.com or:asd
 
-The output is aligned in columns to fit the window; add -full to always
+The output is aligned in columns to fit the window; add `-full` to always
 dispaly everything.
 
-Use -show to echo the SQL query before running, or -showonly to just show the
-URL and exit.
+Use `-show` to echo the SQL query before running, or `-showonly` to just show
+the URL and exit.
 
 You can get the full URL by giving the ID (first column in output):
 

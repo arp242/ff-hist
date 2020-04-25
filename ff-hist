@@ -106,9 +106,9 @@ full=0
 show=0
 for arg in $args; do
 	case "$arg" in 
-		-full)     full=1 ;;
-		-showonly) show=2 ;;
-		-show)     show=1 ;;
+		[\-]*full)     full=1 ;;
+		[\-]*showonly) show=2 ;;
+		[\-]*show)     show=1 ;;
 		title:*)   add_col 'title' "${arg#title:}" ;;
 		url:*)     add_col 'url' "${arg#url:}"     ;;
 		*)
